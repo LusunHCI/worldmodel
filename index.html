@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>WM-ABench</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -43,6 +43,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -52,20 +53,42 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Do VLMs Have Internal World Models? Towards an Atomic Evaluation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                <a href="https://scholar.google.com/citations?user=-zquUaEAAAAJ&hl=en" target="_blank">Qiyue Gao</a><sup>*</sup>,
+              <!-- </span>
+                <span class="author-block"> -->
+                  <a href="https://scholar.google.com/citations?user=UPtuhT4AAAAJ&hl=en" target="_blank">Xinyu Pi</a><sup>*</sup>,
+                <!-- </span>
+                  <span class="author-block"> -->
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kevin Liu</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Junrong Chen</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ruolan Yang</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xinqi Huang</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xinyu Fang</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Lu Sun</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Gautham Kishore</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ai Bo</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Stone Tao</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">MengYang Liu</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiaxi Yang</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chao-Jung Lai</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiannan Xiang</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Benhao Huang</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zeming Chen</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">David Danks</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hao Su</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tianmin Shu</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ziqiao Ma</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Lianhui Qin</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhiting Hu</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">Maitrix.org<br>UC San Diego, JHU, EPFL, UMich</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -133,7 +156,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        WM-ABench, a large-scale benchmark comprising 23 fine-grained evaluation dimensions across 6 diverse simulated environments with controlled counterfactual simulations. 
       </h2>
     </div>
   </div>
@@ -145,10 +168,13 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">What is WM-ABench?</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Internal world models (WMs) enable agents to understand the world's state and predict transitions, serving as the basis for advanced deliberative reasoning.Recent large Vision-Language Models (VLMs), such as GPT-4o and Gemini, exhibit potential as general-purpose WMs. While the latest studies have evaluated and shown limitations in specific capabilities such as visual understanding, a systematic evaluation of VLMs' fundamental WM abilities remains absent. Drawing on comparative psychology and cognitive science, we propose a two-stage framework that assesses perceptions(visual, spatial, temporal, quantitative, and motion) and prediction (mechanistic simulation, transitive inference, compositional inference) to provide an atomic evaluation of VLMs as WMs. Guided by this framework, we introduce <b>WM-ABench</b>, a large-scale benchmark comprising 23 fine-grained evaluation dimensions across 6 diverse simulated environments with controlled counterfactual simulations.
+          </p>
+          <p>
+            Through 517 controlled experiments on 11 latest commercial and open-source VLMs, we find that these models exhibit striking limitations in basic world modeling abilities. For instance, all models perform at near-random accuracy when distinguishing motion trajectories. Additionally, they lack disentangled understanding - e.g., they tend to believe blue objects move faster than green ones. Rich results and analyses reveal significant gaps between VLMs and human-level world modeling.
           </p>
         </div>
       </div>
@@ -162,35 +188,34 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+      <div id="framework">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-three-fifths">
+            <h2 class="title is-3">Dual-Stage Framework</h2>
+            <div class="content has-text-justified">
+              Function of world model in two stages:
+                  <li>Perception Stage: Visual, spatial, temporal, quantitative, and motion perceptions.</li>
+                  <li>Prediction Stage: Mechanistic simulation, transitive inference, compositional inference.</li>
+              <br>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+              </div>
+              </div>
+            </div>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Compare with Other Benchmark/h2>
+              <div class="content has-text-justified">
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/comparison.png" alt="MY ALT TEXT"/>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+  </div>
   </div>
 </div>
 </div>
@@ -200,78 +225,93 @@
 
 
 
-<!-- Youtube video -->
+<!-- Visualization-->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <h2 class="title is-3">WM-ABench Model Performance on Prediction</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <div>
+            <canvas id="myChart"></canvas>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Visualization video -->
+
+<!-- Paper poster -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">WM-ABench Model Performance on Perception</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <div>
+            <canvas id="barchart-perception"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">WM-ABench Model Performance on Prediction</h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-three-fifths">
+            <div>
+              <canvas id="barchart-prediction"></canvas>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </section>
+<!--End paper poster -->
 
 
 <!-- Video carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+    <div class="hero-body">
+          <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            First image description.
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Second image description.
+          </h2>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+          Third image description.
+        </h2>
       </div>
-    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Fourth image description.
+        </h2>
+      </div>
+  </div>
+</div>
   </div>
 </section>
 <!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
@@ -310,3 +350,6 @@
 
   </body>
   </html>
+
+  <script type="text/javascript" src="static/js/visualizer.js"></script>
+   
